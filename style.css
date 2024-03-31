@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+ 
+}
+
+.container {
+    width: 100%;
+    
+}
+.container .title h1{
+    text-align: center;
+}
+.container header{
+    background: linear-gradient(rgba(255, 68, 0, 0.568), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/97/08/7d/97087d0fe9fef0bc83a647da6bbd0d07.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.container header nav{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header .menu ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container header .menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container header .menu ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container .banner{
+    margin: 100px ;
+    width: 650px;
+    padding-bottom: 130px;
+
+}
+.container .banner h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px auto;
+    width: 900px;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: rgb(236, 71, 21);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%; /* Ajuste para que a imagem preencha o .card */
+    height: 100%; /* Ajuste para que a imagem preencha o .card */
+    object-fit: cover;
+}
+.pokemon-details-modal {
+    position: fixed; /* Mudança para 'fixed' para garantir que cubra toda a tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro translúcido */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Garante que o modal fique acima de outros conteúdos */
+    overflow: auto; /* Permite rolagem interna se o conteúdo exceder a altura */
+}
+.pokemon-details-modal img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.pokemon-details-modal h1 {
+    font-size: 30px;
+}
+.pokemon-details-modal p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.pokemon-details-modal button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: orangered;
+}
